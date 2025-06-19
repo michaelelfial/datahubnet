@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\inodeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\inodeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "INodeConverter.cs",
+              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\INodeConverter.cs",
+              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\INodeConverter.cs",
+              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\INodeConverter.cs",
+              "RelativeToolTip": "Ccf.Lib.DataHubNet\\INodeConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T16:08:22.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Node.cs",
+              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\Node.cs",
+              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\Node.cs",
+              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\Node.cs",
+              "RelativeToolTip": "Ccf.Lib.DataHubNet\\Node.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T14:04:03.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hub.cs",
+              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\Hub.cs",
+              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\Hub.cs",
+              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\Hub.cs",
+              "RelativeToolTip": "Ccf.Lib.DataHubNet\\Hub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T14:02:37.101Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
