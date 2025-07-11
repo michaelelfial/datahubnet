@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\datahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\datahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\interfaces\\idatanode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\interfaces\\idatanode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\datanode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\datanode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\utilities\\modetracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\utilities\\modetracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\enumerations\\lockmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\enumerations\\lockmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\ccf.lib.datahubnet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\inodeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\inodeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|d:\\git\\datahubnet\\ccf.lib.datahubnet\\ccf.lib.datahubnet\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C4E2A13-3019-4C64-8FB2-46CAAE435FC4}|Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj|solutionrelative:ccf.lib.datahubnet\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,19 +38,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModeTracker.cs",
+              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\utilities\\ModeTracker.cs",
+              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\utilities\\ModeTracker.cs",
+              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\utilities\\ModeTracker.cs",
+              "RelativeToolTip": "Ccf.Lib.DataHubNet\\utilities\\ModeTracker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T15:34:53.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LockMode.cs",
+              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\enumerations\\LockMode.cs",
+              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\enumerations\\LockMode.cs",
+              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\enumerations\\LockMode.cs",
+              "RelativeToolTip": "Ccf.Lib.DataHubNet\\enumerations\\LockMode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:35:49.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ccf.Lib.DataHubNet",
+              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj",
+              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj",
+              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj",
+              "RelativeToolTip": "Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-11T12:24:59.089Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDataNode.cs",
+              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\interfaces\\IDataNode.cs",
+              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\interfaces\\IDataNode.cs",
+              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\interfaces\\IDataNode.cs",
+              "RelativeToolTip": "Ccf.Lib.DataHubNet\\interfaces\\IDataNode.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wCAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T12:24:22.425Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "INodeConverter.cs",
               "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\INodeConverter.cs",
               "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\INodeConverter.cs",
@@ -42,32 +106,38 @@
               "RelativeToolTip": "Ccf.Lib.DataHubNet\\INodeConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T16:08:22.379Z"
+              "WhenOpened": "2025-06-19T16:08:22.379Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Node.cs",
-              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\Node.cs",
-              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\Node.cs",
-              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\Node.cs",
-              "RelativeToolTip": "Ccf.Lib.DataHubNet\\Node.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DataNode.cs",
+              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\DataNode.cs",
+              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\DataNode.cs",
+              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\DataNode.cs",
+              "RelativeToolTip": "Ccf.Lib.DataHubNet\\DataNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T14:04:03.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Hub.cs",
-              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\Hub.cs",
-              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\Hub.cs",
-              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\Hub.cs",
-              "RelativeToolTip": "Ccf.Lib.DataHubNet\\Hub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DataHub.cs",
+              "DocumentMoniker": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\DataHub.cs",
+              "RelativeDocumentMoniker": "Ccf.Lib.DataHubNet\\DataHub.cs",
+              "ToolTip": "D:\\Git\\datahubnet\\Ccf.Lib.DataHubNet\\Ccf.Lib.DataHubNet\\DataHub.cs",
+              "RelativeToolTip": "Ccf.Lib.DataHubNet\\DataHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T14:02:37.101Z"
+              "WhenOpened": "2025-06-19T14:02:37.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
