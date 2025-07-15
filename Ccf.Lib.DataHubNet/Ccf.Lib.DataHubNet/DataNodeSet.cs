@@ -7,15 +7,42 @@ using System.Threading.Tasks;
 namespace Ccf.Lib.DataHubNet {
     internal class DataNodeSet<TModel> : IHubNode {
         private List<DataNode<TModel>> _Nodes = new List<DataNode<TModel>>();
-        public DataNodeSet(string[]? path) {
+        private ModeTracker _Tracker = new();
+        private int _Limit;
+
+        public DataNodeSet(string[]? path, int limit = -1) {
             Path = path;
+            _Limit = limit;
         }
         public string[]? Path { get; private set; }
 
         public Type DataType => typeof(TModel);
 
-        List<DataNode<TModel>> Lock(LockMode mode = LockMode.None) {
+        public DataNode<TModel> this[int index] {
+            get { 
+                if (index >= 0 && index < _Nodes.Count) {
+                    return _Nodes[index];
+                } else {
+                    throw new IndexOutOfRangeException();
+                }
+                
+            }
+        }
+        public int Count => _Nodes.Count;
+        public DataNode<TModel> Add(DataNode<TModel> node, LockMode mode = LockMode.None) {
+            if (_Limit > 0 && _Nodes.Count > _Limit) throw new IndexOutOfRangeException();
+            _Tracker.PutLock(mode);
+            _Nodes.Add(node);
+            return node;
+        }
 
+        List<DataNode<TModel>> Lock(LockMode mode = LockMode.None) {
+            _Tracker.PutLock(mode);
+            return _Nodes;
+        }
+        void Unlock(LockMode mode = LockMode.None) {
+            _Tracker.LiftLock(mode);
+        }
 
     }
 }

@@ -12,17 +12,21 @@ namespace Ccf.Lib.DataHubNet {
         public EmitterCollection() {
         }
         
-        void Add<T>(IEventEmitter<T> emitter) where T: Delegate {
-            _Emitters.Add(typeof(T), emitter);
+        void Add<H>(IEventEmitter<H> emitter) where H: EventBase {
+            _Emitters.Add(typeof(H), emitter);
         }
 
 
-        public EventEmitter<T> Get<T>() where T: Delegate { 
-                if (_Emitters.ContainsKey(typeof(T))) {
-                    return _Emitters[typeof(T)] as EventEmitter<T>;
+        public EventEmitter<H>? Get<H>() where H: EventBase { 
+                if (_Emitters.ContainsKey(typeof(H))) {
+                    return _Emitters[typeof(H)] as EventEmitter<H>;
+                } else {
+                    var emitter = new EventEmitter<H>();
+                    _Emitters.Add(typeof(H), emitter);
+                    return emitter;
                 }
-                return null;
         }
+        
 
         public IEnumerator<IEventEmitter> GetEnumerator() {
             return _Emitters.Values.GetEnumerator();
