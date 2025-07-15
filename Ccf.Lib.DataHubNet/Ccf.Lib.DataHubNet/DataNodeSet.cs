@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ccf.Lib.DataHubNet {
-    internal class DataNodeSet<TModel> : IHubNode {
+    public class DataNodeSet<TModel> : IDataNode<List<DataNode<TModel>>> {
         private List<DataNode<TModel>> _Nodes = new List<DataNode<TModel>>();
         private ModeTracker _Tracker = new();
         private int _Limit;
@@ -36,13 +36,28 @@ namespace Ccf.Lib.DataHubNet {
             return node;
         }
 
-        List<DataNode<TModel>> Lock(LockMode mode = LockMode.None) {
+        public List<DataNode<TModel>> Lock(LockMode mode = LockMode.None) {
             _Tracker.PutLock(mode);
             return _Nodes;
         }
-        void Unlock(LockMode mode = LockMode.None) {
+        public void Unlock(LockMode mode = LockMode.None) {
             _Tracker.LiftLock(mode);
         }
 
+        List<DataNode<TModel>> IDataNode<List<DataNode<TModel>>>.Lock(LockMode mode) {
+            return Lock(mode);
+        }
+
+        void IDataNode<List<DataNode<TModel>>>.Unlock(LockMode mode) {
+            Unlock(mode);
+        }
+
+        object IDataNode.Lock(LockMode mode) {
+            return Lock(mode);
+        }
+
+        void IDataNode.Unlock(LockMode mode) {
+            Unlock(mode);
+        }
     }
 }

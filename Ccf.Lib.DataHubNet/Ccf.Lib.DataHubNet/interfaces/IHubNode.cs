@@ -10,20 +10,16 @@ namespace Ccf.Lib.DataHubNet {
     /// this mostly takes care for the address and model's data type
     /// </summary>
     public interface IHubNode {
-        string[]? Path { get; }
+        string? Path { get; }
 
         Type DataType { get; }
 
-        bool ComparePath(string[] inpath) {
+        bool ComparePath(string inpath) {
             if (inpath == null || inpath.Length == 0) return false;
             if (Path != null && Path.Length > 0) {
-                for (int i = 0; i < inpath.Length; i++) {
-                    if (i < Path.Length) {
-                        if (string.Compare(inpath[i], Path[i]) == 0) continue;
-                    }
-                    return false;
+                if (string.Compare(inpath, Path) == 0) { 
+                    return true;
                 }
-                return true;
             }
             return false;
         }

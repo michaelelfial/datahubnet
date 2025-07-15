@@ -5,14 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ccf.Lib.DataHubNet {
-    public class EventEmitter<H>: IEventEmitter<H> where H: EventBase {
+    public class EventEmitter<TEvent>: IEventEmitter<TEvent> where TEvent: IEventBase, new() {
 
-        private List<Action<H>> _Handlers = new();
+        private List<Action<TEvent>> _Handlers = new();
 
-        public void Subscribe(Action<H> handler) {
+        public EventEmitter(IHubNode) {
+            
+        }
+
+        public void Subscribe(Action<TEvent> handler) {
             _Handlers.Add(handler);
         }
-        public void Unsubscribe(Action<H> handler) { 
+        public void Unsubscribe(Action<TEvent> handler) { 
             var index = _Handlers.IndexOf(handler);
             if (index >= 0) {
                 _Handlers.RemoveAt(index);
@@ -22,13 +26,13 @@ namespace Ccf.Lib.DataHubNet {
             _Handlers.Clear();
         }
 
-        public void Fire(H h) {
+        public void Fire(TEvent h) {
             foreach (var handler in _Handlers) {
                 handler(h);
             }
         }
-        public H Event() {
-            var e = new H();
+        public TEvent Event() {
+            var e = new TEvent();
             e.SetNode(this_node);
                 return e;
         }
@@ -39,7 +43,7 @@ namespace Ccf.Lib.DataHubNet {
         }
 
         public void Subscribe(Action handler) {
-            if (handler is Action<H> ah) {
+            if (handler is Action<TEvent> ah) {
                 Subscribe(ah);
                 return;
             }
@@ -47,7 +51,7 @@ namespace Ccf.Lib.DataHubNet {
         }
 
         public void Unsubscribe(Action handler) {
-            if (handler is Action<H> ah) {
+            if (handler is Action<TEvent> ah) {
                 var i = _Handlers.IndexOf(ah);
                 if (i >= 0) _Handlers.RemoveAt(i);
             }
@@ -55,7 +59,7 @@ namespace Ccf.Lib.DataHubNet {
         }
 
         public void Fire(object h) {
-            if (h is Action<H> ah) {
+            if (h is Action<TEvent> ah) {
                 Fire(ah);
             }
         }

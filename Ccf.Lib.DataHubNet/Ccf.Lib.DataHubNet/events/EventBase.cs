@@ -5,14 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ccf.Lib.DataHubNet {
-    public class EventBase: IEventBase {
-        public IDataNode Node { get; private set; }
-        public EventBase(IDataNode node) {
+    public class EventBase<TModel>: IEventBase<DataNode<TModel>> {
+        public DataNode<TModel>? Node { get; private set; }
+
+        public EventBase() {
+        }
+        public EventBase(DataNode<TModel> node) {
             Node = node;
         }
 
-        void IEventBase.SetNode(IDataNode node) {
+        void IEventBase<DataNode<TModel>>.SetNode(DataNode<TModel> node) {
             Node = node;
         }
+
+        
     }
 }
