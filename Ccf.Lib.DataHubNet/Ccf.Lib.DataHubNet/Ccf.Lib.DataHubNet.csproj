@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="drafts\Class1.1cs" />
+  </ItemGroup>
+
 </Project>

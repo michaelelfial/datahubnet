@@ -5,12 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ccf.Lib.DataHubNet {
-    public class EventEmitter<TEvent>: IEventEmitter<TEvent> where TEvent: IEventBase, new() {
+    public class EventEmitter<TNode,TEvent>: IEventEmitter<TEvent,TNode> 
+        where TEvent: IEventBase<TNode>, new() 
+        where TNode: IDataNode {
 
+
+        private TNode _Node;
         private List<Action<TEvent>> _Handlers = new();
 
-        public EventEmitter(IHubNode) {
-            
+        public EventEmitter(TNode node) {
+            _Node = node;
         }
 
         public void Subscribe(Action<TEvent> handler) {
@@ -33,13 +37,13 @@ namespace Ccf.Lib.DataHubNet {
         }
         public TEvent Event() {
             var e = new TEvent();
-            e.SetNode(this_node);
+            e.SetNode(_Node);
                 return e;
         }
         public void Fire() {
-            var e = new H();
-            e.SetNode(this_node)
-
+            var e = new TEvent();
+            e.SetNode(_Node);
+            Fire(e);
         }
 
         public void Subscribe(Action handler) {
@@ -59,7 +63,7 @@ namespace Ccf.Lib.DataHubNet {
         }
 
         public void Fire(object h) {
-            if (h is Action<TEvent> ah) {
+            if (h is TEvent ah) {
                 Fire(ah);
             }
         }

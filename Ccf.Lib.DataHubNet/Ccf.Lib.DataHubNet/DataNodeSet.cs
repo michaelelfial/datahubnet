@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 
 namespace Ccf.Lib.DataHubNet {
     public class DataNodeSet<TModel> : IDataNode<List<DataNode<TModel>>> {
+
         private List<DataNode<TModel>> _Nodes = new List<DataNode<TModel>>();
         private ModeTracker _Tracker = new();
         private int _Limit;
+        public EmitterCollection<DataNode<TModel>> Events { get; private set; }
 
-        public DataNodeSet(string[]? path, int limit = -1) {
+        public DataNodeSet() { 
+        }
+        public DataNodeSet(string path, int limit = -1) {
             Path = path;
             _Limit = limit;
         }
-        public string[]? Path { get; private set; }
+        public string? Path { get; private set; }
 
         public Type DataType => typeof(TModel);
 

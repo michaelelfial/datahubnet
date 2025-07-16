@@ -7,23 +7,26 @@ namespace Ccf.Lib.DataHubNet
     public class DataNode<TModel>: IDataNode<TModel>
     {
 
-        internal DataNode(string[]? path = null) { 
+        protected DataNode() {
+            Events = new(this);
+        }
+        internal DataNode(string path = null):this() { 
             Path = path;
         }
         //private Lock _locker = new Lock();
         private ModeTracker _Tracker = new ModeTracker();
 
-        public EmitterCollection Events { get; private set; } = new EmitterCollection();
-        private TModel _Data;
+        public EmitterCollection<DataNode<TModel>> Events { get; private set; }
+        private TModel? _Data;
         /// <summary>
         /// Path relative to the parent node
         /// </summary>
-        public string[]? Path { get; protected set; }
+        public string? Path { get; protected set; }
 
         public Type DataType => typeof(TModel);
 
         //internal TModel Data => _Data;
-        public TModel Lock(LockMode mode = LockMode.None) {
+        public TModel? Lock(LockMode mode = LockMode.None) {
             _Tracker.PutLock(mode);
             return _Data;
             
@@ -34,7 +37,7 @@ namespace Ccf.Lib.DataHubNet
 
         public void Unlock(LockMode mode = LockMode.None) {
             if (mode.HasFlag(LockMode.Change)) {
-                Events.Get<DataChangedEvent>()?.Fire(this);
+                Events.Get<DataChangedEvent<TModel>>()?.Fire(this);
                 //Events.Get<StoreDataEvent>()?.Fire(this);
             }
             throw new NotImplementedException();

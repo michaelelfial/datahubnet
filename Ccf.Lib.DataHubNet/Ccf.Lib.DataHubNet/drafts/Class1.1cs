@@ -46,6 +46,9 @@ namespace Ccf.Lib.DataHubNet.drafts {
 
     internal class Class1 {
         void main() {
+            var e1 = new SetChangedEvent<User>();
+            ((IEventBase<DataNodeSet<User>>)e1).SetNode()
+
 
             DataNode<User> node = new();
             var storage_user = new UserStorage();

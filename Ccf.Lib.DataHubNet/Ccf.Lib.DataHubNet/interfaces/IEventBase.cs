@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ccf.Lib.DataHubNet {
-    internal interface IEventBase<DN> : IEventBase where DN : IHubNode {
+    public interface IEventBase<DN> : IEventBase where DN : IDataNode {
         void SetNode(DN node);
     }
 

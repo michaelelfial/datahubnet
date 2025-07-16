@@ -11,4 +11,9 @@ namespace Ccf.Lib.DataHubNet {
         public DataChangedEvent(DataNode<TModel> node):base(node) { }
 
     }
+
+    public class SetChangedEvent<TModel> : SetEventBase<TModel> {
+        public SetChangedEvent():base() { }
+        public SetChangedEvent(DataNodeSet<TModel> node) : base(node) { }
+    }
 }

@@ -5,6 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ccf.Lib.DataHubNet {
+    public interface IEventEmitter<TEvent,TNode>: IEventEmitter<TEvent>
+        where TEvent: IEventBase<TNode>
+        where TNode: IDataNode {
+
+        TEvent Event();
+    }
+    
     public interface IEventEmitter<TEvent>: IEventEmitter where TEvent: IEventBase {
         void Subscribe(Action<TEvent> handler);
         void Unsubscribe(Action<TEvent> handler);
