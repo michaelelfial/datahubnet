@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Ccf.Lib.DataHubNet {
     public class DataChangedEvent<TModel>: EventBase<TModel> {
 
-        public DataChangedEvent() { }
+        public DataChangedEvent():base() { }
         public DataChangedEvent(DataNode<TModel> node):base(node) { }
 
     }

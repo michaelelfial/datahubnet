@@ -10,11 +10,15 @@ namespace Ccf.Lib.DataHubNet {
         private List<DataNode<TModel>> _Nodes = new List<DataNode<TModel>>();
         private ModeTracker _Tracker = new();
         private int _Limit;
-        public EmitterCollection<DataNode<TModel>> Events { get; private set; }
+        /// <summary>
+        /// //////////////////////////////////////////////////////////
+        /// </summary>
+        public EmitterCollection<DataNodeSet<TModel>> Events { get; private set; }
 
-        public DataNodeSet() { 
+        public DataNodeSet() {
+            Events = new(this);
         }
-        public DataNodeSet(string path, int limit = -1) {
+        public DataNodeSet(string path, int limit = -1):this() {
             Path = path;
             _Limit = limit;
         }
